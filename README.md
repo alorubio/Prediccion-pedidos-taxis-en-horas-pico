@@ -18,4 +18,4 @@ Al analizar el extracto de días, se tuvo la oportunidad de visualizar en la gr�
 ### Pruebas y conclusiones
 Se realizaron las pruebas para cada uno de los modelos que se entrenaron y se llegó a la conclusión de que para la aplicación el modelo más adecuado sería CatBoostRegressor, a pesar de que todos los modelos salieron por debajo de la métrica propuesta en la descripción del proyecto, el modelo CatBoostRegressor es el modelo que arroja el error RECM más pequeño para el conjunto de prueba, y así mismo, también un error bajo para el conjunto de entrenamiento, lo que lo hace el más idóneo a utilizar en el presente proyecto de pedidos de taxis.
 
-**Explora los detalles del proyecto en el [repositorio completo]().**
+**Explora los detalles del proyecto en el [repositorio completo](https://github.com/alorubio/Prediccion-pedidos-taxis-en-horas-pico/blob/d743a93b202b592f95990dad237eaca28c8e069a/Proyecto%20Sprint15%20(1).ipynb).**
