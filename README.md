@@ -1,21 +1,21 @@
-# Predicción de pedidos de taxis durante horas pico
+# Predicting Taxi Orders During Peak Hours
 
-La compañía Sweet Lift Taxi ha recopilado datos históricos sobre pedidos de taxis en los aeropuertos. Para atraer a más conductores durante las horas pico, necesitamos predecir la cantidad de pedidos de taxis para la próxima hora. Construye un modelo para dicha predicción.
+Sweet Lift Taxi has collected historical data on taxi orders at airports. To attract more drivers during peak hours, we need to predict the number of taxi orders for the next hour. Build a model for this prediction.
 
-La métrica RECM en el conjunto de prueba no debe ser superior a 48.
+The RECM metric on the test set should not exceed 48.
 
-### La estructura del proyecto se basa en los siguientes pasos:
-1. Descarga de datos y remuestreo por una hora.
-2. Análisis de los datos
-3. Entrenamiento de diferentes modelos con diferentes hiperparámetros. La muestra de prueba deberá ser el 10% del conjunto de datos inicial.
-4. Prueba de los datos usando la muestra de prueba y se proporciona conclusión.
+### The project structure is based on the following steps:
+1. Data download and resampling for one hour.
+2. Data analysis.
+3. Training different models with different hyperparameters. The test sample should be 10% of the initial dataset.
+4. Data testing using the test sample, and a conclusion is provided.
 
-### Análisis
-Durante el análisis se pudo observar que los registros tienden a subir conforme avanza el tiempo, misma situación que se visualiza en la tendencia, que se observa que va un poco en ascenso, sin embargo en el apartado de estacionalidad no se puede definir nada en concreto ya que no se observa información de manera clara con toda la data, en los residuos se puede observar que la media permanece en 0, sin embargo tiene algunos picos en ciertos momentos, sin embargo los picos no dicen nada claro, es decir, que pueda haber sucesos que nos aclare que son por tendencia o estacionalidad, por lo que no tiene estacionaridad.
+### Analysis
+During the analysis, it was observed that the records tend to increase over time. This same situation is seen in the trend, which is observed to be slightly upward. However, in the seasonality section, nothing concrete can be defined since no information is clearly observed with all the data. In the residuals, it can be seen that the mean remains at 0, although it has some peaks at certain times. However, the peaks do not clearly indicate anything, that is, there may be events that clarify whether they are due to a trend or seasonality, so there is no stationarity.
 
-Al analizar el extracto de días, se tuvo la oportunidad de visualizar en la gráfica de estacionalidad, si comparamos los resultados desde las 6:00 a las 00:00, es bastante similar, y los residuos permanecen lineales
+When analyzing the extract of days, we had the opportunity to visualize in the seasonality graph, if we compare the results from 6:00 to 00:00, it is quite similar, and the residues remain linear.
 
-### Pruebas y conclusiones
-Se realizaron las pruebas para cada uno de los modelos que se entrenaron y se llegó a la conclusión de que para la aplicación el modelo más adecuado sería CatBoostRegressor, a pesar de que todos los modelos salieron por debajo de la métrica propuesta en la descripción del proyecto, el modelo CatBoostRegressor es el modelo que arroja el error RECM más pequeño para el conjunto de prueba, y así mismo, también un error bajo para el conjunto de entrenamiento, lo que lo hace el más idóneo a utilizar en el presente proyecto de pedidos de taxis.
+### Tests and Conclusions
+Tests were performed for each of the trained models, and it was concluded that the most suitable model for the application would be CatBoostRegressor. Although all models performed below the metric proposed in the project description, the CatBoostRegressor model yields the smallest RECM error for the test set and also a low error for the training set, making it the most suitable model for use in this taxi ordering project.
 
-**Explora los detalles en el [proyecto completo](https://github.com/alorubio/Prediccion-pedidos-taxis-en-horas-pico/blob/d743a93b202b592f95990dad237eaca28c8e069a/Proyecto%20Sprint15%20(1).ipynb).**
+**Explore the details in the [complete project](https://github.com/alorubio/Prediccion-pedidos-taxis-en-horas-pico/blob/d743a93b202b592f95990dad237eaca28c8e069a/Proyecto%20Sprint15%20(1).ipynb).**
